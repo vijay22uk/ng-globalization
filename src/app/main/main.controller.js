@@ -6,13 +6,16 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
+  function MainController($timeout, webDevTec, toastr,$translate) {
     var vm = this;
-
+    var currentLanguage = 0;
     vm.awesomeThings = [];
     vm.classAnimation = '';
     vm.creationDate = 1460390357513;
     vm.showToastr = showToastr;
+vm.switchLang = switchLang;
+// switch language array
+var langArray = ['en','de','nothing'];
 
     activate();
 
@@ -23,9 +26,14 @@
       }, 4000);
     }
 
-    function showToastr() {
-      toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-      vm.classAnimation = '';
+function switchLang() {
+    currentLanguage = (currentLanguage+1) % langArray.length;
+   $translate.use(langArray[currentLanguage]);
+   showToastr(langArray[currentLanguage]);
+}
+
+    function showToastr(key) {
+        toastr.info(key);
     }
 
     function getWebDevTec() {

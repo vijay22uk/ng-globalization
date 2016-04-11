@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('ngGlobalization', ['ngAnimate', 'ngMessages', 'ngResource', 'ngRoute', 'toastr']);
+    .module('ngGlobalization', ['ngAnimate', 'ngMessages', 'ngResource', 'ngRoute', 'toastr','pascalprecht.translate']);
 
 })();
