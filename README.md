@@ -2,6 +2,6 @@
 angularjs globalization localization
 
 ## to run
-    npm install && bowwer install 
+    npm install && bower install 
     gulp serve
     
