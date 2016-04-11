@@ -9,7 +9,7 @@
   function webDevTec() {
     var data = [
       {
-          "statickey":"k1",
+        "statickey":"k1",
         'title': 'AngularJS',
         'url': 'https://angularjs.org/',
         'description': 'HTML enhanced for web apps!',

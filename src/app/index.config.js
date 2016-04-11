@@ -1,5 +1,15 @@
 (function() {
   'use strict';
+angular
+    .module('ngGlobalization')
+    .factory('myCustomHandlerFactory', function (dep1, dep2) {
+        debugger;
+  // has to return a function which gets a tranlation ID
+  return function (translationID) {
+      "No value found for key "+translationID;
+    // do something with dep1 and dep2
+  };
+});
 
   angular
     .module('ngGlobalization')
@@ -27,7 +37,15 @@
     'FOO': 'Dies ist ein Absatz'
   });
   */
- $translateProvider.useSanitizeValueStrategy(null);
+  
+  // loading files async
+  $translateProvider.useStaticFilesLoader({
+    prefix: 'assets/language/locale-',
+    suffix: '.json'
+}); 
+  
+   $translateProvider.useMissingTranslationHandler('myCustomHandlerFactory');
+  $translateProvider.useSanitizeValueStrategy(null);
   $translateProvider.preferredLanguage('en');
   
 }
