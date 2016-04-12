@@ -6,7 +6,7 @@ using https://angular-translate.github.io/
 npm install -g gulp bower
 
 ## to run
-    npm install -g gulp bower
+    npm install &&  bower install
     gulp serve
     
     
