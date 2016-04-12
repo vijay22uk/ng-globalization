@@ -1,9 +1,10 @@
 {
     "TITLE": "Hallo",
+    "Greeting_Text":"Hallo!! dieser Text dynamische locale Veränderung zeigen ",
     "FOO": "Dies ist ein Absatz",
-    "k1":"AngularJS in german dedededec ",
-    "k2":"BrowserSync in german is same as in eng ",
-    "k3":"gulpjs in german dedededec ",
-    "k4":"Jasmine in german dedededec ",
-    "k5":"karma in german dedededec "
+    "k1":"AngularJS in Deutsch ",
+    "k2":"BrowserSync in Deutsch ist die gleiche wie in eng ",
+    "k3":"gulpjs in Deutsch ",
+    "k4":"Jasmine in Deutsch ",
+    "k5":"karma in Deutsch "
   }
